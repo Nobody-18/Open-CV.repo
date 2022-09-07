@@ -1,12 +1,12 @@
 import cv2 as cv
 
-img = cv.imread('face.jpeg')
-cv.imshow('batman',img)
+img = cv.imread('D:\Program Files\GITHUB\Open-CV.repo\group.jpeg')
+# cv.imshow('batman',img)
 
 gray =cv.cvtColor(img,cv.COLOR_BGR2GRAY)
-cv.imshow('gary',gray)
+# cv.imshow('gary',gray)
 haar_cascade =cv.CascadeClassifier('haar_face.xml')
-faces_rect = haar_cascade.detectMultiScale(gray,scaleFactor=1.1,minNeighbours=1)
+faces_rect = haar_cascade.detectMultiScale(gray,scaleFactor=1.1,)
 
 print(f'no of faces found ={len(faces_rect)}')
 

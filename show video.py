@@ -5,11 +5,13 @@ def resized_frame(frame,scale=0.5):
     dimensions=(width,height)
     return cv.resize(frame,dimensions,interpolation=cv.INTER_AREA)
 
-capture = cv.VideoCapture('Southhall.mp4')
+capture = cv.VideoCapture(0)
+
 while True:
     isTrue,frame=capture.read()
-    resized =resized_frame(frame)
-    cv.imshow('video',resized)
+    # resized =resized_frame(frame)
+    # cv.imshow('video',resized)
+    cv.imshow('Video',frame)
     if cv.waitKey(20) &0xFF==ord('d'):
         break
 capture.release()
