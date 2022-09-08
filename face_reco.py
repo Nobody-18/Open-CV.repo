@@ -26,6 +26,7 @@ def create_train():
 
 
 create_train()
+print(f'featuers = {len(features)}, labels = {len(labels)}')
 print(f'done  training')
 features = np.array(features, dtype='object')
 labels = np.array(labels)
