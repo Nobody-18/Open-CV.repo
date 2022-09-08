@@ -2,8 +2,8 @@ from ctypes import c_void_p
 import os 
 import cv2 as cv 
 import numpy as np
-people = ['Virat Kohli', 'MS Dhoni']
-DIR = r'D:\Program Files\PYTHON\Test 1\New folder'
+people = ['MS Dhoni', 'Virat Kohli']
+DIR = r'D:\Program Files\PYTHON\Test 1\New folder (2)'
 haar_cascade =cv.CascadeClassifier('haar_face.xml')
 features = []
 labels = []
