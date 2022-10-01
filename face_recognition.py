@@ -11,7 +11,7 @@ people = [ 'MS Dhoni', 'Virat Kohli']
 
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
-count=1
+count = 1
 DIR = r'D:\Program Files\PYTHON\Test 1\New folder'
 for img in os.listdir(DIR):
     img_path = os.path.join(DIR,img)
